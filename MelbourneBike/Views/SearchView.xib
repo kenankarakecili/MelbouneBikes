@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SearchView" customModule="MelbourneBike" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="335" height="350"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="miE-IA-9yi">
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outlet property="dataSource" destination="iN0-l3-epB" id="cVo-vI-tkw"/>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="6nH-gw-vUe"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="miE-IA-9yi" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="WWs-KC-B6e"/>
+                <constraint firstAttribute="bottom" secondItem="miE-IA-9yi" secondAttribute="bottom" id="aDE-X4-6ZQ"/>
+                <constraint firstAttribute="trailing" secondItem="miE-IA-9yi" secondAttribute="trailing" id="bg1-lO-irS"/>
+                <constraint firstItem="miE-IA-9yi" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="s4P-QJ-KUp"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="tableView" destination="miE-IA-9yi" id="0dX-S4-ivN"/>
+            </connections>
+            <point key="canvasLocation" x="34.5" y="-104"/>
+        </view>
+    </objects>
+</document>
