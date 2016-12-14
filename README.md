@@ -1,4 +1,4 @@
-Welcome to MelbourneBike iOS application.
+# Homepass.com Melbourne Technical Exercise
 
 This iOS application is written in Swift3.
 
